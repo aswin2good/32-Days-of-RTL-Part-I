@@ -11,7 +11,7 @@ module univ_nand(
     nmos(someV,gnd,b); //nmos is a predefined primitive keyword: nmos (output(drain), input(source), control(gate));
     nmos(out,someV,a);
     
-    pmos(out,vdd,a);//pmos is a predefined primitive keyword: pmos (output(drain), input(source), control(gate));
+    pmos(out,vdd,a); //pmos is a predefined primitive keyword: pmos (output(drain), input(source), control(gate));
     pmos(out,vdd,b);
 
     // nmos and pmos are the keywords generally used in a switch level modelling. 

@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 
+//this will be the testbench for the switch model designed.
 module switch_tb();
     reg in;  // in is of reg type because input's value will be used to find out the value of output.
     wire out; // out is of type wire because it has to change continously by DUT.

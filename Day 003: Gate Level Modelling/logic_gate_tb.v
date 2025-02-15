@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 
 // we will be using this testbench to simulate the waveforms.
 module logic_gate_tb();

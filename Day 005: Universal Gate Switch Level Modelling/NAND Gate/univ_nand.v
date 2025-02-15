@@ -1,4 +1,6 @@
+`timescale 1ns / 1ps
 
+//we will be implementing NAND Gate design using switch level modelling
 module univ_nand(
     input a,b,  //let inputs have two values a and b
     output out //let output be said to be out, and by default it is of wire type.

@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 
 module switch_tb();
     reg in;  // in is of reg type because input's value will be used to find out the value of output.

@@ -1,4 +1,6 @@
+`timescale 1ns / 1ps
 
+//this  will be the testbench for the NOR gate code designed.
 module nand_tb();
     reg Vin1, Vin2; //inputs are reg type, because inputs' value will be used to find out the value of output.
     wire Vout; //output are wire type, because it has to change continously by DUT.

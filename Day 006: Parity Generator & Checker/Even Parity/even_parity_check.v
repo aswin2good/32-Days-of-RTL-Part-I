@@ -1,25 +1,6 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/15/2025 06:45:58 PM
-// Design Name: 
-// Module Name: even_parity_check
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
+//we will be implementing odd parity generating design module
 module even_parity_check(
     input [7:0] data_in, // data_in is a 8 bit input, and is of type wire.
     input parity_in,     // parity is a single bit, is also a wire type

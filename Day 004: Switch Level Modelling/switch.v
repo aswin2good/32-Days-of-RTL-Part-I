@@ -1,4 +1,6 @@
+`timescale 1ns / 1ps 
 
+//we will be implementing a cmos inverter using nmos, pmos primitive keywords
 module switch(
     input in, //input is said to be in
     output out //output is said to be out (wire type)

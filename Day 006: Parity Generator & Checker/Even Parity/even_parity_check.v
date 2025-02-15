@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-//we will be implementing odd parity generating design module
+//we will be implementing even parity checking design module
 module even_parity_check(
     input [7:0] data_in, // data_in is a 8 bit input, and is of type wire.
     input parity_in,     // parity is a single bit, is also a wire type

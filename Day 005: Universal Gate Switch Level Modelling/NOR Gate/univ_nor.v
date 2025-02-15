@@ -1,4 +1,6 @@
+`timescale 1ns / 1ps
 
+//we will be implementing NOR gate design using switch level modelling.
 module univ_nor(
     input a,b, //inputs are let us say a and b
     output out //let output be out, and is of wire type

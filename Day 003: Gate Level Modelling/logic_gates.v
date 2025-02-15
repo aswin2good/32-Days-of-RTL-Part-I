@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 
 //we will be implementing the basic logic gates using gate level modelling
 

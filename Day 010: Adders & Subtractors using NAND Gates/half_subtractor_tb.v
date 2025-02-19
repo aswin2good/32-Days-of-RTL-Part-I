@@ -1,30 +1,12 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/18/2025 07:52:19 AM
-// Design Name: 
-// Module Name: half_subtractor_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-/*
+//this is the testbench for half subtractor design module
 module half_subtractor_tb();
     reg a,b; 
     wire Diff, Bout;
     
-    half_subtractor_nand DUT(a,b,Diff,Bout);
+    half_subtractor_nand DUT(a,b,Diff,Bout); //instantiating half subtractor design module
+    
     initial begin
     #10 a=1'b0; b=1'b0; 
     #10 a=1'b0; b=1'b1;
@@ -34,4 +16,3 @@ module half_subtractor_tb();
     end
     
 endmodule
-*/

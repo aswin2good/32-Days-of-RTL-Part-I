@@ -1,31 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/18/2025 07:56:54 AM
-// Design Name: 
-// Module Name: full_adder_nand
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
+//we will be implementing full adder design using nand gates
 module full_adder_nand(
     input a,b,cin,
     output Sum, Cout
     );
-    wire o1,o2,o3,o4,o5,o6,o7;
-    
+    wire o1,o2,o3,o4,o5,o6,o7; //temporary outputs
+
+    //using gate level modelling
     nand n1(o1,a,b);
     nand n2(o2,o1,a);
     nand n3(o3,o1,b);

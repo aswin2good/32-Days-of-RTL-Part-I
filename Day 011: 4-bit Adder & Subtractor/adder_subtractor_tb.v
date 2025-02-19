@@ -1,32 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/19/2025 10:53:11 AM
-// Design Name: 
-// Module Name: adder_subtractor_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
+//this is the testbench for adder, subtractor design module
 module adder_subtractor_tb();
     reg [3:0] a,b;
     reg en;
     wire [3:0] sum_or_diff;
     wire cout_or_bout;
     
-    adder_subtractor DUT(a, b, en, sum_or_diff, cout_or_bout);
+    adder_subtractor DUT(a, b, en, sum_or_diff, cout_or_bout); //instantiating adder subtractor design module
     
     initial begin
     #10 a=4'b0001 ; b=4'b0111 ; en=1'b0;

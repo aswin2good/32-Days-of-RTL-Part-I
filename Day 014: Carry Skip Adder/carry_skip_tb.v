@@ -1,31 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/22/2025 09:29:54 AM
-// Design Name: 
-// Module Name: carry_skip_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
+//this is the testbench for carry skip adder design module
 module carry_skip_tb();
     reg [3:0] a, b;
     reg cin;
     wire [3:0] sum;
     wire carry;
-    carry_skip_adder dut(sum, carry, a, b, cin);
+    
+    carry_skip_adder dut(a, b, cin, sum, carry); //instantiating carry skip adder module
     
     initial
         begin

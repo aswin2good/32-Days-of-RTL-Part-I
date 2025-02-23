@@ -1,34 +1,18 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/22/2025 09:23:47 AM
-// Design Name: 
-// Module Name: carry_skip_adder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//we will be implementing carry skip adder in this design code
 
+//this is the full adder code
 module full_adder(
      input a,b,cin,
      output Sout,Cout
      );
      
-     assign Sout= a^b^cin;
+     assign Sout= a^b^cin;                    //calculating sum and carry out
      assign Cout= (a&b) | (b&cin) | (a&cin);
 endmodule
 
+//defining ripple adder design module
 module ripple_adder(
     input [3:0] A, B,
     input carry_in, 
@@ -38,20 +22,21 @@ module ripple_adder(
     );
     wire [2:0] c;
 
-    full_adder fa1(A[0], B[0], carry_in, sum[0], c[0]);
+     full_adder fa1(A[0], B[0], carry_in, sum[0], c[0]);  //instantiating full adder module for processing
     full_adder fa2(A[1], B[1], c[0], sum[1], c[1]);
     full_adder fa3(A[2], B[2], c[1], sum[2], c[2]);
     full_adder fa4(A[3], B[3], c[2], sum[3], carry_out);
 endmodule
 
+//now we will implement carry skip adder module
 module carry_skip_adder(
-    output [3:0]sum, 
-    output cout,
     input [3:0]a, b,
     input cin
+    output [3:0]sum, 
+    output cout,
     );
-    wire c, sel;
-    wire [3:0]p;
+    wire c, sel; //temporary variables
+     wire [3:0]p; //carry propagation
 
     ripple_adder pa(a, b, cin, sum, c);
 

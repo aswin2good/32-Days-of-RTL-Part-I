@@ -4,7 +4,7 @@
 module b_g_tb();
 
     reg [3:0]binary_in;
-wire [3:0] gray_out;
+    wire [3:0] gray_out;
 
 binary_to_gray dut(binary_in, gray_out); //instantiating binary to gray design module
 
